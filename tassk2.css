@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    height: 80px;
+    width: 100%;
+    background-color: rgb(53, 43, 25) ;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    padding-left: 3%;
+}
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%; 
+   font-size: larger;
+    padding-right: 3%;
+    color: white;
+    font-weight: bold;
+}
+.menu a{
+    color: aliceblue;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+.menu a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px; /* underline thickness */
+    bottom: 0;
+    left: 0;
+    background-color: currentColor;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-in;
+}
+.menu a:hover::after{
+    transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.button{
+    padding-right: 5%;
+    
+}
+.button button{
+    border: none;
+    cursor: pointer;
+    height: 40px;
+    width: 90px;
+    font-size: large;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: rgba(92, 116, 92, 0.631);
+    color: white;
+    border: 1px solid rgb(241, 224, 193);
+}
+.button button:hover{
+    background-color: rgb(241, 224, 193);
+    color: rgb(0, 0, 0);   
+    transition: 0.5s ease-in-out;
+    /* border: none; */
+}
+.div{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10%;
+    
+    
+}
+.obito{
+    width: 350px;
+    /* border: 1px solid black; */
+    box-shadow: 0 8px 16px rgb(205, 204, 204);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.obito img{
+    height: 200px;
+    width: 350px;
+    border-radius: 10px 10px 0 0;
+}
+.text{
+    width: 300px;
+    padding-left: 7%;
+    padding-bottom: 9%;
+    padding-top: 5%;
+}
+.madara{
+    width: 350px;
+    /* border: 1px solid black; */
+    box-shadow: 0 8px 16px rgb(205, 204, 204);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.madara img{
+    height: 200px;
+    width: 350px;
+    border-radius: 10px 10px 0 0;
+}
+.madara:hover{
+    transform: translate(2px,3px);
+    transition: 0.5s ease-in-out;
+    box-shadow: 0 8px 16px rgb(12, 40, 50);
+}
+.obito:hover
+{
+    transform: translate(2px,3px);
+    transition: 0.5s ease-in-out;
+    box-shadow: 0 8px 16px rgb(80, 80, 32);
+}

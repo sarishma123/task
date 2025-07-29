@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>certificate generation option</title>
+    <link type="text/css" href="task1.css" rel="stylesheet">
+</head>
+<body>
+    <form>
+    <div class="parent">
+   
+    <h1 style="text-align: center;"> 
+
+        Certificate Generation option
+    </h1>
+    <label>
+        SELECT MODE:
+        <select>
+           
+            <option value="single certificate (using form fields)"> single certificate (using form fields)</option>
+            <option value="Multiple certificate (using jason fields)" >Multiple certificate (using jason fields)</option>
+        </select>
+    </label>
+    <div class="row">
+        <div class="first">
+            <label for="certificate type">
+                <br>
+                certificate Type: <br>
+                <select>
+                    <option value="best award certificate">best award certificate</option>
+                    <option value="project completion certificate">project completion certificate</option>
+                </select>
+            
+            </label>
+            
+        </div>
+        <div class="second">
+            <label>
+                <br>
+            Recipient Name:<br>
+            
+            <input id="recipient name" name="recipient name" type="text" placeholder="enter the name" required>
+            </label>
+        </div>
+        <div class="third">
+            <label>
+                <br>
+                Batch(e.g.,2025)
+                <div>
+                  <input type="batch number" name="batch number" type="number" placeholder="enter your batch " required>  
+                </div>
+
+            </label>
+
+        </div>
+    
+        </div>
+    
+        <div class="row1">
+    <div class="f1">
+        <label for="Program">
+            <br>
+            Program:
+            <br>
+             <input type="program" name="program of your course" placeholder="eg.BSC.CSIT,BCA" required> 
+
+        </label>
+        
+    </div>
+    <div class="Academic year">
+        <label for="Recipient">
+            <br>
+                Academic year(eq.2025):<br>
+        
+        <input id="Academic year" name="Academic year" type="number" placeholder="e.g.,2024" required>
+        </label>
+    </div>
+    <div class="R3">
+        <label for="Project title">
+            <br>
+            Project title:
+            <div>
+              <input type="project title" name="Project title" type="text" placeholder="e.g. Advance Application" required>  
+            </div>
+
+        </label>
+
+    </div>
+
+    </div>
+
+    <div class="row2">
+        <div class="f2">
+            <label for="course instructor name">
+                <br>
+               course instructor name: <br>
+            
+                    <input type="instructor name" name="Program instructor name" type="text" placeholder="eg.Alex Ray" required>
+                
+            
+            </label>
+            
+        </div>
+        <div class="s2">
+            <label for="HOD Name">
+                <br>
+            HOD Name:<br>
+            
+            <input id="HOD Name" name="HOD Name" type="text" placeholder="eg.Emily white" required>
+            </label>
+        </div>
+        <div class="t3">
+            <label for="HOD Designation">
+                <br>
+                HOD Designation:
+                <div>
+                  <input type="HOD Designation" name="HOD Designation" type="text" placeholder="eg.head of somputer science " required>  
+                </div>
+
+            </label>
+
+        </div>
+    
+    </div>
+
+    <div class="row3">
+        <div class="f3">
+            <label for="priciple name">
+                <br>
+               priciple name:<br>
+            
+                    <input type="priciple name" name="priciple name" type="text" placeholder="eg.Alex medows text" required>
+                
+            
+            </label>
+            
+        </div>
+        <div class="s3">
+            <label for="priciple designation">
+                <br>
+            priciple designation(optional):<br>
+            
+            <input id="priciple designation" name="priciple designation" type="text" placeholder="collage principle">
+            </label>
+        </div>
+        <div class="t3">
+            <label for="collage name">
+                <br>
+                collage name:
+                <div>
+                  <input type="collage name" name="collage name" type="text" placeholder="central engineering collage" required>  
+                </div>
+
+            </label>
+
+        </div>
+    
+    </div>
+
+    <div class="row4">
+        <div class="f4">
+            <label for="Affiliation">
+                <br>
+               Affiliation:<br>
+            
+                    <input type="Affiliatione" name="Affiliatione" type="text" placeholder="University name Affiliation" required>
+                
+            
+            </label>
+            
+        </div>
+        <div class="s4">
+            <label for="Collage Address">
+                <br>
+            Collage Address:<br>
+            
+            <input id="Collage Address" name="Collage Address" type="text" placeholder=" eg.(tech park,silicion city)">
+            </label>
+        </div>
+        <div class="t4">
+            <label for="Contact Phone">
+                <br>
+               Contact Phone:
+                <div>
+                  <input type="Contact Phone" name="Contact Phone" type="number" placeholder="eg.+977-9845678342" required>  
+                </div>
+
+            </label>
+
+        </div>
+    
+    </div>
+
+    <div id="button">
+        <button type="submit" onclick="alert('Certificate generated!')" class="button">Generate Certificate</button>
+    </div>
+
+</div>
+    </form>
+</body>
+</html>
